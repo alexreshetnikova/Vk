@@ -1,18 +1,19 @@
 package domain;
 
 public class Post {
-    private boolean registeredUser;
-    private String groupId;
-    private String groupPicUrl;
+    private int postId;
+    private int placeId;
+    private int authorId;
+    private int authorPicUrl;
     private int date;
     private String text;
     private String imageUrl;
-    private boolean canHidePost;
-    private boolean canHideGroup;
-    private boolean canComment;
-    private boolean canRepost;
-    private boolean canLike;
-    private boolean canAddToFavorites;
+    private boolean friendsOnly;
+    private boolean isPinned;
     private int numberOfViews;
+    private int numberOfLikes;
+    private int numberOfReposts;
+    private int numberOfComments;
+    private UserInfo userInfo;
     private CommentsInfo commentsInfo;
 }
